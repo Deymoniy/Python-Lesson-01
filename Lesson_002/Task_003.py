@@ -1,4 +1,4 @@
-print("Hello, user. Enter number to see summ of its figures")
+print("Hello, user. Enter number to see all of your figures counted in a specific way")
 n = int(input())
 lst = [round((1+1/i)**i, 3) for i in range(1, n+1)]
 print(f'Последовательность: {lst}\nСумма: {round(sum(lst), 3)}')
