@@ -3,3 +3,7 @@
 #45 -> 101101
 #3 -> 11
 #2 -> 10
+
+number = int(input())
+bin_num = bin(number)
+print(bin_num)
