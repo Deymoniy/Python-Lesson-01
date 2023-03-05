@@ -1,0 +1,13 @@
+import random
+import pandas as pd
+
+def one_hot(data, column_name):
+  for i in data[column_name].unique():
+    data['one-hot'] = (data[column_name] == i).astype('float')
+
+lst = ['robot'] * 10
+lst += ['human'] * 10
+random.shuffle(lst)
+data = pd.DataFrame({'whoAmI':lst})
+one_hot(data, 'whoAmI')
+print(data.head())
